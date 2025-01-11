@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Course home page for Web and Computer Programming Certificate"
-		/>
-		<meta name="author" content="Kevin Villacreses" />
-		<title>Course Home Page</title>
-		<link rel="stylesheet" href="styles/normalize.css" />
-		<link rel="stylesheet" href="styles/stlyes.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script src="scripts/main.js" defer></script>
-	</head>
 
-	<body>
-		<header>
-			<h1>Web and Computer Programming Certificate</h1>
-			<nav>
-				<button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
-				<ul id="navMenu" class="hidden">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="#">Chamber</a></li>
-					<li><a href="#">GitHub Profile</a></li>
-					<li><a href="#">LinkedIn</a></li>
-				</ul>
-			</nav>
-		</header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Course home page for Web and Computer Programming Certificate" />
+	<meta name="author" content="Kevin Villacreses" />
+	<title>Course Home Page</title>
+	<link rel="stylesheet" href="styles/normalize.css" />
+	<link rel="stylesheet" href="styles/stlyes.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+	<script src="scripts/main.js" defer></script>
+</head>
 
-		<main>
-			<section id="intro">
-				<h2>Welcome</h2>
-				<p>
-					Explore the courses in the Web and Computer Programming Certificate.
-					Learn and grow your skills in web development, programming, and more.
-				</p>
-			</section>
+<body>
+	<header>
+		<h1>Web and Computer Programming Certificate</h1>
+		<nav>
+			<button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+			<ul id="navMenu" class="">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Chamber</a></li>
+				<li><a href="https://github.com/kevinvillajim" target="_blank">GitHub Profile</a></li>
+				<li><a href="https://www.linkedin.com/in/kevin-villacreses-1851a7157/" target="_blank">LinkedIn</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+			<ul id="navMenu" class="hidden">
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="#">Chamber</a></li>
+				<li><a href="#">GitHub Profile</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</nav>
+	</header>
 
-			<section id="courses">
-				<h2>Courses</h2>
-				<div id="courseCards"></div>
-				<div id="courseFilters">
-					<button id="showAll">All Courses</button>
-					<button id="showWDD">WDD Courses</button>
-					<button id="showCSE">CSE Courses</button>
-				</div>
-			</section>
-
-			<section id="credits">
-				<h2>Total Credits</h2>
-				<p id="totalCredits">Credits: 0</p>
-			</section>
-		</main>
-
-		<footer>
+	<main>
+		<section id="intro">
+			<h2>Welcome</h2>
 			<p>
-				&copy; <span id="currentYear"></span> Kevin Villacreses, Quito, Ecuador
+				Explore the courses in the Web and Computer Programming Certificate.
+				Learn and grow your skills in web development, programming, and more.
 			</p>
-			<p id="lastModified"></p>
-		</footer>
-	</body>
+		</section>
+
+		<section id="courses">
+			<h2>Courses</h2>
+			<div id="courseCards"></div>
+			<div id="courseFilters">
+				<button id="showAll">All Courses</button>
+				<button id="showWDD">WDD Courses</button>
+				<button id="showCSE">CSE Courses</button>
+			</div>
+		</section>
+
+		<section id="credits">
+			<h2>Total Credits</h2>
+			<p id="totalCredits">Credits: 0</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>
+			&copy; <span id="currentYear"></span> Kevin Villacreses, Quito, Ecuador
+		</p>
+		<p id="lastModified"></p>
+	</footer>
+</body>
+
 </html>

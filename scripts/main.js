@@ -1,73 +1,60 @@
 document.addEventListener("DOMContentLoaded", () => {
-	// Handle copyright year dynamically
-	const yearSpan = document.getElementById("year");
-	const currentYear = new Date().getFullYear();
-	if (yearSpan) {
-		yearSpan.textContent = currentYear;
-	}
+  // Handle copyright year dynamically
+  const yearSpan = document.getElementById("currentYear");
+  const currentYear = new Date().getFullYear();
+  if (yearSpan) {
+    yearSpan.textContent = currentYear;
+  }
 
-	// Handle last modified date
-	const lastModifiedSpan = document.getElementById("lastModified");
-	if (lastModifiedSpan) {
-		lastModifiedSpan.textContent = `Last Modified: ${document.lastModified}`;
-	}
+  // Handle last modified date
+  const lastModifiedSpan = document.getElementById("lastModified");
+  if (lastModifiedSpan) {
+    lastModifiedSpan.textContent = `Last Modified: ${document.lastModified}`;
+  }
 
-	// Courses and Filters
-	const courses = [
-		{
-			code: "WDD230",
-			name: "Web Frontend Development",
-			completed: false,
-			class: "WDD",
-			credits: 3,
-		},
-		{
-			code: "CSE121",
-			name: "Introduction to Programming",
-			completed: true,
-			class: "CSE",
-			credits: 4,
-		},
-		{
-			code: "CSE340",
-			name: "Database Design",
-			completed: false,
-			class: "CSE",
-			credits: 3,
-		},
-	];
+  // Courses and Filters
+  const courses = [
+    { code: "CSE 110", completed: true, class: "CSE" },
+    { code: "WDD 130", completed: true, class: "WDD" },
+    { code: "CSE 111", completed: true, class: "CSE" },
+    { code: "CSE 210", completed: false, class: "CSE" },
+    { code: "WDD 131", completed: true, class: "WDD" },
+    { code: "WDD 210", completed: false, class: "WDD" },
+  ];
 
-	const courseContainer = document.getElementById("courseCards");
-	const filterButtons = document.querySelectorAll("#courseFilters button");
+  const courseContainer = document.getElementById("courseCards");
+  const showAllButton = document.getElementById("showAll");
+  const showWDDButton = document.getElementById("showWDD");
+  const showCSEButton = document.getElementById("showCSE");
 
-	function renderCourses(filter = "all") {
-		courseContainer.innerHTML = "";
-		const filteredCourses = courses.filter((course) => {
-			if (filter === "all") return true;
-			return filter === "completed" ? course.completed : !course.completed;
-		});
+  function renderCourses(filter = "all") {
+    courseContainer.innerHTML = ""; // Clear existing courses
 
-		filteredCourses.forEach((course) => {
-			const courseCard = document.createElement("div");
-			courseCard.className = "courseCard";
-			if (course.completed) {
-				courseCard.classList.add("completed");
-			}
-			courseCard.innerHTML = `
-                    <h3>${course.name}</h3>
-                    <p>Code: ${course.code}</p>
-                    <p>Credits: ${course.credits}</p>
-                `;
-			courseContainer.appendChild(courseCard);
-		});
-	}
+    const filteredCourses = courses.filter((course) => {
+      if (filter === "all") return true;
+      return course.class === filter;
+    });
 
-	filterButtons.forEach((button) => {
-		button.addEventListener("click", () => {
-			const filter = button.dataset.filter;
-			renderCourses(filter);
-		});
-	});
+    filteredCourses.forEach((course) => {
+      const courseCard = document.createElement("div");
+      courseCard.className = "courseCard";
+      courseCard.style.backgroundColor = course.completed
+        ? "lightgreen"
+        : "white";
 
-	renderCourses();
+      courseCard.innerHTML = `
+        <h3>${course.code}</h3>
+        <p>Class: ${course.class}</p>
+        <p>Status: ${course.completed ? "Completed" : "Incomplete"}</p>
+      `;
+      courseContainer.appendChild(courseCard);
+    });
+  }
+
+  showAllButton.addEventListener("click", () => renderCourses("all"));
+  showWDDButton.addEventListener("click", () => renderCourses("WDD"));
+  showCSEButton.addEventListener("click", () => renderCourses("CSE"));
+
+  // Initial render of all courses
+  renderCourses();
 });
