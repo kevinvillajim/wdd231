@@ -1,60 +1,89 @@
+const mainnav = document.querySelector("#navigation");
+const hambutton = document.querySelector("#menu");
+
+hambutton.addEventListener("click", () => {
+	mainnav.classList.toggle("show");
+	hambutton.classList.toggle("show");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Handle copyright year dynamically
-  const yearSpan = document.getElementById("currentYear");
-  const currentYear = new Date().getFullYear();
-  if (yearSpan) {
-    yearSpan.textContent = currentYear;
-  }
+	// Handle copyright year dynamically
+	const yearSpan = document.getElementById("currentYear");
+	const currentYear = new Date().getFullYear();
+	if (yearSpan) {
+		yearSpan.textContent = currentYear;
+	}
 
-  // Handle last modified date
-  const lastModifiedSpan = document.getElementById("lastModified");
-  if (lastModifiedSpan) {
-    lastModifiedSpan.textContent = `Last Modified: ${document.lastModified}`;
-  }
+	const menu = document.getElementById("menu");
+	const navigation = document.getElementById("navigation");
 
-  // Courses and Filters
-  const courses = [
-    { code: "CSE 110", completed: true, class: "CSE" },
-    { code: "WDD 130", completed: true, class: "WDD" },
-    { code: "CSE 111", completed: true, class: "CSE" },
-    { code: "CSE 210", completed: false, class: "CSE" },
-    { code: "WDD 131", completed: true, class: "WDD" },
-    { code: "WDD 210", completed: false, class: "WDD" },
-  ];
+	menu.addEventListener("click", () => {
+		navigation.classList.toggle("show");
+		menu.classList.toggle("show");
+	});
 
-  const courseContainer = document.getElementById("courseCards");
-  const showAllButton = document.getElementById("showAll");
-  const showWDDButton = document.getElementById("showWDD");
-  const showCSEButton = document.getElementById("showCSE");
+	// Handle last modified date
+	const lastModifiedSpan = document.getElementById("lastModified");
+	if (lastModifiedSpan) {
+		lastModifiedSpan.textContent = `Last Modified: ${document.lastModified}`;
+	}
 
-  function renderCourses(filter = "all") {
-    courseContainer.innerHTML = ""; // Clear existing courses
+	// Courses and Filters
+	const courses = [
+		{code: "CSE 110", completed: true, class: "CSE", credits: 3},
+		{code: "WDD 130", completed: true, class: "WDD", credits: 3},
+		{code: "CSE 111", completed: true, class: "CSE", credits: 3},
+		{code: "CSE 210", completed: false, class: "CSE", credits: 3},
+		{code: "WDD 131", completed: true, class: "WDD", credits: 3},
+		{code: "WDD 210", completed: false, class: "WDD", credits: 3},
+	];
 
-    const filteredCourses = courses.filter((course) => {
-      if (filter === "all") return true;
-      return course.class === filter;
-    });
+	const courseContainer = document.getElementById("courseCards");
+	const showAllButton = document.getElementById("showAll");
+	const showWDDButton = document.getElementById("showWDD");
+	const showCSEButton = document.getElementById("showCSE");
+	const credits = document.getElementById("creditCount");
 
-    filteredCourses.forEach((course) => {
-      const courseCard = document.createElement("div");
-      courseCard.className = "courseCard";
-      courseCard.style.backgroundColor = course.completed
-        ? "lightgreen"
-        : "white";
+	function renderCourses(filter = "all") {
+		courseContainer.innerHTML = "";
 
-      courseCard.innerHTML = `
+		const filteredCourses = courses.filter((course) => {
+			if (filter === "all") return true;
+			return course.class === filter;
+		});
+
+		filteredCourses.forEach((course) => {
+			const courseCard = document.createElement("div");
+			courseCard.className = "courseCard";
+			courseCard.style.backgroundColor = course.completed
+				? "lightgreen"
+				: "white";
+
+			courseCard.innerHTML = `
         <h3>${course.code}</h3>
         <p>Class: ${course.class}</p>
         <p>Status: ${course.completed ? "Completed" : "Incomplete"}</p>
+        <p>Credits: ${course.credits}</p>
       `;
-      courseContainer.appendChild(courseCard);
-    });
-  }
+			courseContainer.appendChild(courseCard);
+		});
+		countCredits(filter);
+	}
 
-  showAllButton.addEventListener("click", () => renderCourses("all"));
-  showWDDButton.addEventListener("click", () => renderCourses("WDD"));
-  showCSEButton.addEventListener("click", () => renderCourses("CSE"));
+	function countCredits(filter = "all") {
+		let totalCredits = 0;
+		courses.forEach((course) => {
+			if (course.completed && (filter === "all" || course.class === filter)) {
+				totalCredits += course.credits;
+			}
+		});
+		credits.textContent = totalCredits;
+	}
 
-  // Initial render of all courses
-  renderCourses();
+	showAllButton.addEventListener("click", () => renderCourses("all"));
+	showWDDButton.addEventListener("click", () => renderCourses("WDD"));
+	showCSEButton.addEventListener("click", () => renderCourses("CSE"));
+
+	// Initial render of all courses
+	renderCourses();
 });
