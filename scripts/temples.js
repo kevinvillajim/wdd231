@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+	const menuToggle = document.getElementById("menuToggle");
+	const navigation = document.getElementById("navigation");
+
+	// Toggle el menú al hacer clic en el botón
+	menuToggle.addEventListener("click", () => {
+		navigation.classList.toggle("active");
+	});
+
 	const yearSpan = document.getElementById("currentYear");
 	const currentYear = new Date().getFullYear();
 	if (yearSpan) {

@@ -27,6 +27,7 @@ header {
 #navigation li {
 	display: inline-block;
 	margin-right: 2rem;
+	cursor: pointer;
 }
 
 #navigation li a {
@@ -86,3 +87,15 @@ footer p {
 	font-size: 2rem;
 	color: #333;
 }
+
+#menuToggle {
+	display: block; /* Mostrar el botón de menú */
+}
+
+
+#navigation.active {
+	display: none; /* Hacer visible el menú */
+}
+
+
+

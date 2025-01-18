@@ -2,4 +2,41 @@
 	#templeCards {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	#navigation {
+		display: none; /* Ocultar el menú por defecto */
+		flex-direction: column; /* Menú en una columna */
+		background-color: #326275;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		z-index: 1000;
+		padding: 1rem 0;
+	}
+
+	#navigation li {
+		margin: 1rem 0;
+	}
+
+	#menuToggle {
+		display: none;
+		background: none;
+		border: none;
+		color: white;
+		font-size: 2rem;
+		cursor: pointer;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	#menuToggle:hover {
+		color: #f9f9f9;
+	}
+
+	#menuToggle.active + #navigation {
+		display: flex;
+	}
 }
