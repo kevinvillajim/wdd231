@@ -32,6 +32,11 @@ header {
 	cursor: pointer;
 }
 
+#navigation li:hover {
+	text-decoration: underline;
+	color: antiquewhite;
+}
+
 #navigation li a {
 	color: white;
 	text-decoration: none;
