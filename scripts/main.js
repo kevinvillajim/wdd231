@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			const courseCard = document.createElement("div");
 			courseCard.className = "courseCard";
 			courseCard.style.backgroundColor = course.completed
-				? "lightgreen"
+				? "Green"
 				: "white";
-
+			courseCard.style.color = course.completed ? "white" : "black";
 			courseCard.innerHTML = `
         <h3>${course.code}</h3>
         <p>Class: ${course.class}</p>

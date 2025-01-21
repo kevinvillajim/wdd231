@@ -9,7 +9,7 @@ body {
 }
 
 header {
-	background: #4caf50;
+	background: #102c00;
 	color: white;
 	padding: 1rem 0;
 	text-align: center;
@@ -89,17 +89,17 @@ header {
 	padding: 0.5rem 1rem;
 	border: none;
 	border-radius: 5px;
-	background: #4caf50;
+	background: #012402;
 	color: white;
 	cursor: pointer;
 }
 
 #courseFilters button:hover {
-	background: #45a049;
+	background: #008f07;
 }
 
 footer {
-	background: #333;
+	background: #111111;
 	color: white;
 	text-align: center;
 	padding: 1rem 0;
@@ -143,5 +143,3 @@ main {
 section {
 	margin-bottom: 2rem;
 }
-
-
