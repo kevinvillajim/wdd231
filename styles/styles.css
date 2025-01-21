@@ -9,10 +9,11 @@ body {
 }
 
 header {
-	background: #102c00;
+	background: #1f5300;
 	color: white;
 	padding: 1rem 0;
 	text-align: center;
+	position: relative;
 }
 
 #menu {
@@ -23,24 +24,37 @@ header {
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
 	color: #fff;
+	position: absolute;
+	top: 30%;
+	right: 1rem;
+	cursor: pointer;
 }
 
 #menu::before {
 	content: "≡";
 }
-
-#navigation.show {
-	display: block;
+#menu.show::before {
+	content: "X";
 }
 
 #navigation {
 	display: none;
 	margin: 0 auto;
 	max-width: 760px;
+	padding: 0;
+	list-style: none;
+}
+
+#navigation.show {
+	display: block;
 }
 
 #navigation li {
 	display: none;
+}
+
+#navigation.show li {
+	display: block;
 }
 
 #navigation a {
@@ -49,19 +63,12 @@ header {
 	text-align: center;
 	color: white;
 	text-decoration: none;
+	transition: background-color 0.3s ease;
 }
 
 #navigation a:hover,
 #navigation a.active {
 	background: #333;
-}
-
-.show li {
-	display: block;
-}
-
-#menu.show::before {
-	content: "X";
 }
 
 #courseCards {
@@ -89,7 +96,7 @@ header {
 	padding: 0.5rem 1rem;
 	border: none;
 	border-radius: 5px;
-	background: #012402;
+	background: #1f5300;
 	color: white;
 	cursor: pointer;
 }
@@ -107,22 +114,30 @@ footer {
 }
 
 @media (min-width: 768px) {
+	#menu {
+		display: none;
+	}
+
 	#navigation {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		align-items: center;
+		padding: 1rem 0;
 	}
 
 	#navigation li {
 		display: block;
+		margin: 0 1rem;
 	}
 
 	#navigation a {
-		text-align: center;
+		padding: 0.5rem 1rem;
 	}
 
-	#menu {
-		display: none;
+	#navigation a:hover {
+		background: #333;
+		border-radius: 4px;
 	}
 
 	#courseCards {

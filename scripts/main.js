@@ -1,26 +1,36 @@
-const mainnav = document.querySelector("#navigation");
-const hambutton = document.querySelector("#menu");
-
-hambutton.addEventListener("click", () => {
-	mainnav.classList.toggle("show");
-	hambutton.classList.toggle("show");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
 	// Handle copyright year dynamically
 	const yearSpan = document.getElementById("currentYear");
 	const currentYear = new Date().getFullYear();
+	const mainnav = document.querySelector("#navigation");
+	const hambutton = document.querySelector("#menu");
+	const header = document.querySelector("header"); // Añadido: definición de header
+
+	hambutton.addEventListener("click", (e) => {
+		e.preventDefault(); // Prevent default anchor behavior
+		mainnav.classList.toggle("show");
+		hambutton.classList.toggle("show");
+	});
+
+	// Close menu when clicking outside
+	document.addEventListener("click", (e) => {
+		if (!header.contains(e.target) && mainnav.classList.contains("show")) {
+			mainnav.classList.remove("show");
+			hambutton.classList.remove("show");
+		}
+	});
+
+	// Handle window resize
+	window.addEventListener("resize", () => {
+		if (window.innerWidth >= 768) {
+			mainnav.classList.remove("show");
+			hambutton.classList.remove("show");
+		}
+	});
+
 	if (yearSpan) {
 		yearSpan.textContent = currentYear;
 	}
-
-	const menu = document.getElementById("menu");
-	const navigation = document.getElementById("navigation");
-
-	menu.addEventListener("click", () => {
-		navigation.classList.toggle("show");
-		menu.classList.toggle("show");
-	});
 
 	// Handle last modified date
 	const lastModifiedSpan = document.getElementById("lastModified");
@@ -55,16 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		filteredCourses.forEach((course) => {
 			const courseCard = document.createElement("div");
 			courseCard.className = "courseCard";
-			courseCard.style.backgroundColor = course.completed
-				? "Green"
-				: "white";
+			courseCard.style.backgroundColor = course.completed ? "Green" : "white";
 			courseCard.style.color = course.completed ? "white" : "black";
 			courseCard.innerHTML = `
-        <h3>${course.code}</h3>
-        <p>Class: ${course.class}</p>
-        <p>Status: ${course.completed ? "Completed" : "Incomplete"}</p>
-        <p>Credits: ${course.credits}</p>
-      `;
+                <h3>${course.code}</h3>
+                <p>Class: ${course.class}</p>
+                <p>Status: ${course.completed ? "Completed" : "Incomplete"}</p>
+                <p>Credits: ${course.credits}</p>
+            `;
 			courseContainer.appendChild(courseCard);
 		});
 		countCredits(filter);
