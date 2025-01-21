@@ -1,22 +1,40 @@
+@media (max-width: 799px) {
+	#menuToggle {
+		display: block;
+	}
+
+	#navigation {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 90%;
+		left: 0;
+		width: 100%;
+		background-color: #326275;
+		padding: 1rem 0;
+		gap: 1rem;
+	}
+
+	#navigation.active {
+		display: flex; /* Se muestra cuando está activo */
+	}
+
+	#navigation li {
+		margin: 0;
+		padding: 0.5rem 0;
+	}
+}
+
 @media (min-width: 800px) {
 	#templeCards {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
 	#navigation {
-		display: none; /* Ocultar el menú por defecto */
-		flex-direction: column; /* Menú en una columna */
-		background-color: #326275;
-		position: absolute;
-		top: 100%;
-		right: 0;
-		width: 100%;
-		text-align: center;
-		z-index: 1000;
-		padding: 1rem 0;
+		display: flex; /* Siempre visible en desktop */
 	}
 
-	#navigation li {
+	/* #navigation li {
 		margin: 1rem 0;
 	}
 
@@ -38,5 +56,5 @@
 
 	#menuToggle.active + #navigation {
 		display: flex;
-	}
+	} */
 }

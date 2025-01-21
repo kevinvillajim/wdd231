@@ -16,17 +16,19 @@ header {
 	color: white;
 	padding: 1rem;
 	text-align: center;
+	position: relative;
 }
 
 #navigation {
 	list-style: none;
 	padding: 0;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
 }
 
 #navigation li {
-	display: inline-block;
-	margin-right: 2rem;
 	cursor: pointer;
 }
 
@@ -89,13 +91,18 @@ footer p {
 }
 
 #menuToggle {
-	display: block; /* Mostrar el botón de menú */
+	display: none;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	right: 1rem;
+	z-index: 1001;
 }
-
 
 #navigation.active {
 	display: none; /* Hacer visible el menú */
 }
-
-
-
