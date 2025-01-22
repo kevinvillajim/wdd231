@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ABC Corporation",
+    "address": "123 Main Street, Quito, Ecuador",
+    "phone": "+593-123-4567",
+    "website": "https://abc-corp.com",
+    "image": "images/abc-corp.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "XYZ Tech",
+    "address": "456 Innovation Way, Quito, Ecuador",
+    "phone": "+593-987-6543",
+    "website": "https://xyz-tech.com",
+    "image": "images/xyz-tech.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "123 Industries",
+    "address": "789 Industrial Blvd, Quito, Ecuador",
+    "phone": "+593-456-7890",
+    "website": "https://123-industries.com",
+    "image": "images/123-industries.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "456 Partners",
+    "address": "101 Financial Ave, Quito, Ecuador",
+    "phone": "+593-789-0123",
+    "website": "https://456-partners.com",
+    "image": "images/456-partners.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "789 Corporation",
+    "address": "1313 Business Blvd, Quito, Ecuador",
+    "phone": "+593-012-3456",
+    "website": "https://789-corp.com",
+    "image": "images/789-corp.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "101 Industries",
+    "address": "1414 Industrial Way, Quito, Ecuador",
+    "phone": "+593-345-6789",
+    "website": "https://101-industries.com",
+    "image": "images/101-industries.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "1313 Tech",
+    "address": "1515 Technology Blvd, Quito, Ecuador",
+    "phone": "+593-678-9012",
+    "website": "https://1313-tech.com",
+    "image": "images/1313-tech.png",
+    "membershipLevel": 3
+  },
+  {
+    "name": "1414 Partners",
+    "address": "1616 Financial Ave, Quito, Ecuador",
+    "phone": "+593-901-2345",
+    "website": "https://1414-partners.com",
+    "image": "images/1414-partners.png",
+    "membershipLevel": 2
+  },
+  {
+    "name": "1515 Corporation",
+    "address": "1717 Business Blvd, Quito, Ecuador",
+    "phone": "+593-234-5678",
+    "website": "https://1515-corp.com",
+    "image": "images/1515-corp.png",
+    "membershipLevel": 1
+  },
+  {
+    "name": "1616 Industries",
+    "address": "1818 Industrial Way, Quito, Ecuador",
+    "phone": "+593-567-8901",
+    "website": "https://1616-industries.com",
+    "image": "images/1616-industries.png",
+    "membershipLevel": 1
+  }
+]
