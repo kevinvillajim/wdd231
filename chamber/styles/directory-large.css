@@ -1,0 +1,18 @@
+@media only screen and (min-width: 38rem) {
+	#menuToggle {
+		display: none;
+	}
+	#navigation,
+	#navigation.open {
+		display: flex;
+		justify-content: center;
+	}
+
+	#navigation li a:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.img-cards {
+		width: 200px;
+	}
+}

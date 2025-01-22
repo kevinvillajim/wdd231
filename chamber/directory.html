@@ -11,14 +11,20 @@
 		<title>Temples of the Church</title>
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/directory.css" />
+		<link rel="stylesheet" href="styles/directory-large.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" href="images/chamber-logo.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+
+		<link rel="icon" href="images/portal.ico" />
 		<meta property="og:title" content="Chamber of Commerce - Quito" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="images/chamber-preview.png" />
+		<meta property="og:image" content="images/portal-logo.png" />
 		<meta
 			property="og:url"
 			content="https://kevinvillacreses.com/directory.html"
@@ -27,22 +33,36 @@
 	</head>
 	<body>
 		<header>
-			<h1>Temple Album</h1>
-			<button id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
-			<nav>
-				<ul id="navigation">
-					<li><a href="#">Home</a></li>
-					<li id="all">All</li>
-					<li id="old">Old</li>
-					<li id="new">New</li>
-					<li id="large">Large</li>
-					<li id="small">Small</li>
-				</ul>
-			</nav>
+			<img
+				src="images/portal-logo.png"
+				alt="Chamber of Commerce Logo"
+				id="logo"
+				width="120"
+				height="120"
+			/>
+			<div class="chamberName">
+				<h1 class="tradeMark">Portal</h1>
+				<h2 class="sub">Chamber of commerce</h2>
+			</div>
+			<button id="menuToggle" aria-label="Toggle Menu"></button>
 		</header>
+		<nav>
+			<ul id="navigation">
+				<li><a href="#">Home</a></li>
+				<li id="nav-directory" class="currentMenuItem">
+					<a href="#">Directory</a>
+				</li>
+				<li id="all"><a href="#">Old</a></li>
+				<li id="new"><a href="#">New</a></li>
+				<li id="large"><a href="#">Large</a></li>
+				<li id="small"><a href="#">Small</a></li>
+			</ul>
+		</nav>
 		<main>
-			<h2 id="title"></h2>
-			<section id="templeCards"></section>
+			<button id="filterToggle" aria-label="Toggle Filter">
+				<span id="toggleIcon" class="material-symbols-outlined">view_list</span>
+			</button>
+			<section id="directoryCards"></section>
 		</main>
 		<footer>
 			<p>
