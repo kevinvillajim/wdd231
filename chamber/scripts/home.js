@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	const weatherSection = document.getElementById("weather-data");
 	const weatherForecast = document.getElementById("forecast-data");
 	const apiKey = "fdc81c13f3bc0e408acd4f11ab5e2379";
-	const city = "Quito";
 	const lat = -0.2299;
 	const lon = -78.5249;
-	const apiTest = "/data/apiTest.json";
-	//const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 	const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=24&appid=${apiKey}&units=metric`;
 	fetch(apiUrl)
 		.then((response) => response.json())
