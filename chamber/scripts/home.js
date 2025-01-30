@@ -9,28 +9,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Fetch Weather Data
 	const weatherSection = document.getElementById("weather-data");
+	const weatherForecast = document.getElementById("forecast-data");
 	const apiKey = "fdc81c13f3bc0e408acd4f11ab5e2379";
 	const city = "Quito";
-	// const apiTest = "/data/apiTest.json";
-	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
+	const lat = -0.2299;
+	const lon = -78.5249;
+	const apiTest = "/data/apiTest.json";
+	//const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+	const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&cnt=24&appid=${apiKey}&units=metric`;
 	fetch(apiUrl)
 		.then((response) => response.json())
 		.then((data) => {
+			const today = data.list[0];
 			weatherSection.innerHTML = `
 				<img src="https://openweathermap.org/img/wn/${
-					data.weather[0].icon
-				}@4x.png" alt="${data.weather[0].description}" />
-			<div>
-                <p>Temperature: <b>${Math.round(data.main.temp)}</b> °C</p>
-                <p>Weather: ${data.weather.map((w) => w.main).join(", ")}</p>
-				<p>High: ${data.main.temp_max}°C</p>
-				<p>Low: ${data.main.temp_min}°C</p>
-				<p>Humidity: ${data.main.humidity}%</p>
-				<p>Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
-				<p>Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
-			<div>
+					today.weather[0].icon
+				}@4x.png" alt="${today.weather[0].description}" />
+				<div>
+					<p>Temperature: <b>${Math.round(today.main.temp)}</b> °C</p>
+					<p>Weather: ${
+						today.weather[0].description.charAt(0).toUpperCase() +
+						today.weather[0].description.slice(1)
+					}</p>
+					<p>High: ${today.main.temp_max}°C</p>
+					<p>Low: ${today.main.temp_min}°C</p>
+					<p>Humidity: ${today.main.humidity}%</p>
+				</div>
             `;
+
+			// Obtener el clima de los próximos 3 días (cada 24 horas)
+			const dailyForecast = data.list
+				.filter((item, index) => index % 8 === 0)
+				.slice(0, 3);
+
+			weatherForecast.innerHTML = dailyForecast
+				.map(
+					(day, i) => `
+					<p >Day ${i + 1}: <b>${
+						day.weather[0].description.charAt(0).toUpperCase() +
+						day.weather[0].description.slice(1)
+					}</b> (${Math.round(day.main.temp)}°C)</p>
+				`
+				)
+				.join("");
 		})
 		.catch((error) => console.error("Error fetching weather data:", error));
 

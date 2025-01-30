@@ -84,6 +84,10 @@ ul {
 	display: block;
 }
 
+.currentMenuItem a {
+	background-color: rgba(256, 256, 256, 0.2);
+}
+
 #hero {
 	background-image: url("../images/hero-img.jpg");
 	background-size: cover;
