@@ -8,10 +8,10 @@
 			content="Welcome to the Chamber of Commerce site, promoting local businesses, community interests, and events in your town."
 		/>
 		<meta name="author" content="Kevin Villacreses" />
-		<title>Directory - Portal - Chamber of commerce</title>
+		<title>Home - Portal - Chamber of commerce</title>
 		<link rel="stylesheet" href="styles/normalize.css" />
-		<link rel="stylesheet" href="styles/directory.css" />
-		<link rel="stylesheet" href="styles/directory-large.css" />
+		<link rel="stylesheet" href="styles/home.css" />
+		<link rel="stylesheet" href="styles/home-large.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
@@ -21,14 +21,14 @@
 			rel="stylesheet"
 		/>
 		<link rel="icon" href="images/portal.ico" />
-		<meta property="og:title" content="Chamber of Commerce - Quito" />
+		<meta property="og:title" content="Home - Chamber of Commerce - Quito" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="images/portal-logo.png" />
 		<meta
 			property="og:url"
-			content="https://kevinvillajim.github.io/wdd231/chamber/directory.html"
+			content="https://kevinvillajim.github.io/wdd231/chamber"
 		/>
-		<script src="scripts/directory.js" defer></script>
+		<script src="scripts/home.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -47,17 +47,44 @@
 		</header>
 		<nav>
 			<ul id="navigation">
-				<li><a href="/">Home</a></li>
+				<li><a href="/chamber">Home</a></li>
+				<li><a href="#">Dicover</a></li>
 				<li id="nav-directory" class="currentMenuItem">
 					<a href="/chamber/directory.html">Directory</a>
 				</li>
+				<li><a href="#">Directory</a></li>
+				<li><a href="#">Join</a></li>
 			</ul>
 		</nav>
 		<main>
-			<button id="filterToggle" aria-label="Toggle Filter">
-				<span id="toggleIcon" class="material-symbols-outlined">view_list</span>
-			</button>
-			<section id="directoryCards"></section>
+			<section id="hero">
+				<div class="hero-btn">
+					<a href="join.html" class="cta-button">Join Now</a>
+				</div>
+			</section>
+			<h2 id="title-pg">Home</h2>
+			<section id="events">
+				<h2>Events</h2>
+				<div id="event-list"></div>
+			</section>
+
+			<section id="weather">
+				<h2>Weather</h2>
+				<div id="weather-data"></div>
+			</section>
+
+			<section id="weather-forecast">
+				<h2>Weather Forecast</h2>
+				<p><span id="today"></span> <span id="today-data"></span></p>
+				<p><span id="tomorrow"></span> <span id="tomorrow-data"></span></p>
+				<p>
+					<span id="past-tomorrow"></span> <span id="past-tomorrow-data"></span>
+				</p>
+			</section>
+
+			<section id="spotlights">
+				<div class="spotlight-container"></div>
+			</section>
 		</main>
 		<footer>
 			<p>

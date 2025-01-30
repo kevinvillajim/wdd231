@@ -1,0 +1,187 @@
+body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer {
+	background-color: #0e0e0e;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.chamberName {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 2rem;
+	text-align: left;
+}
+.tradeMark {
+	margin: 0 0 10px 0;
+	font-size: 40px;
+}
+.sub {
+	font-size: medium;
+	margin: 0;
+}
+
+#menuToggle::before {
+	content: "☰";
+}
+
+#menuToggle {
+	font-size: 2rem;
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	width: 100%;
+	text-align: right;
+	padding: 0.25rem 2vw;
+}
+
+#navigation {
+	margin: 0;
+	padding-left: 0px;
+	background-color: #1d1d1d;
+}
+
+#navigation li {
+	display: block;
+}
+
+#navigation li a {
+	display: block;
+	padding: 0.75rem 2vw;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.currentMenuItem a {
+	background-color: rgba(256, 256, 256, 0.2);
+}
+
+.list-item {
+	width: 100%;
+}
+
+ul {
+	display: none;
+	list-style-type: none;
+}
+
+#menuToggle.open::before {
+	content: "X";
+}
+
+#navigation.open {
+	display: block;
+}
+
+#hero {
+	background-image: url("../images/hero-img.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 13rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.hero-btn {
+	background-color: #000000;
+	padding: 0.5rem 1rem;
+	margin: 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: #7342aa 0px 0px 20px;
+}
+
+.hero-btn > a {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.hero-btn:hover {
+	background-color: #7342aa;
+}
+
+#title-pg {
+	font-size: 35px;
+}
+
+#events,
+#weather,
+#weather-forecast {
+	margin: 1rem;
+	background-color: #e4e4e4;
+	min-height: 10rem;
+}
+
+#events h2,
+#weather h2,
+#weather-forecast h2 {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 0.3rem;
+	font-weight: 200;
+	margin: 0;
+}
+
+.spotlight-card {
+	margin: 1rem;
+	background-color: rgb(212, 212, 212);
+	border-radius: 15px;
+}
+
+.title-spotlight {
+	text-align: center;
+	padding: 0.2rem;
+	border-bottom: solid 1px black;
+}
+
+.title-spotlight h2,
+.title-spotlight p {
+	margin: 0.4rem;
+	font-weight: 300;
+}
+
+.spotlight-content > img {
+	width: 35%;
+}
+
+.spotlight-content {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+aside > p {
+	font-weight: 600;
+}
+
+aside > p > span {
+	font-weight: 300;
+}
+
+#weather-data > div > p {
+	margin: 0.5rem;
+}
+
+#weather-data > img {
+	width: 45%;
+	height: auto;
+}
+
+#weather-data {
+	display: flex;
+	padding: 1rem 0;
+}
