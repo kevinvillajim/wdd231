@@ -15,4 +15,30 @@
 	.img-cards {
 		width: 200px;
 	}
+
+	main {
+		padding: 0 6rem;
+	}
+
+	.hero-btn {
+		margin: 2rem;
+	}
+
+	#hero {
+		height: 25rem;
+	}
+
+	.cards1 {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+	}
+
+	#spotlights {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	footer {
+		margin-top: 2rem;
+	}
 }

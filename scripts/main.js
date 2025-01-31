@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		hambutton.classList.toggle("show");
 	});
 
-	// Close menu when clicking outside
 	document.addEventListener("click", (e) => {
 		if (!header.contains(e.target) && mainnav.classList.contains("show")) {
 			mainnav.classList.remove("show");
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
-	// Handle window resize
 	window.addEventListener("resize", () => {
 		if (window.innerWidth >= 768) {
 			mainnav.classList.remove("show");
@@ -92,6 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	showWDDButton.addEventListener("click", () => renderCourses("WDD"));
 	showCSEButton.addEventListener("click", () => renderCourses("CSE"));
 
-	// Initial render of all courses
+
 	renderCourses();
 });

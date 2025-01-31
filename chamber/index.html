@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta
 			name="description"
-			content="Welcome to the Chamber of Commerce site, promoting local businesses, community interests, and events in your town."
-		/>
-		<meta name="author" content="Kevin Villacreses" />
+			content="Welcome to the Chamber of Commerce site, promoting local businesses, community interests, and events in your town.">
+		<meta name="author" content="Kevin Villacreses">
 		<title>Home - Portal - Chamber of commerce</title>
-		<link rel="stylesheet" href="styles/normalize.css" />
-		<link rel="stylesheet" href="styles/home.css" />
-		<link rel="stylesheet" href="styles/home-large.css" />
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<link rel="stylesheet" href="styles/home-large.css">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-			rel="stylesheet"
-		/>
-		<link rel="icon" href="images/portal.ico" />
-		<meta property="og:title" content="Home - Chamber of Commerce - Quito" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="images/portal-logo.png" />
+			rel="stylesheet">
+		<link rel="icon" href="images/portal.ico">
+		<meta property="og:title" content="Home - Chamber of Commerce - Quito">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="images/portal-logo.png">
 		<meta
 			property="og:url"
-			content="https://kevinvillajim.github.io/wdd231/chamber"
-		/>
+			content="https://kevinvillajim.github.io/wdd231/chamber">
 		<script src="scripts/home.js" defer></script>
 	</head>
 	<body>
@@ -37,8 +33,7 @@
 				alt="Chamber of Commerce Logo"
 				id="logo"
 				width="120"
-				height="120"
-			/>
+				height="120">
 			<div class="chamberName">
 				<h1 class="tradeMark">Portal</h1>
 				<h2 class="sub">Chamber of commerce</h2>
@@ -47,10 +42,10 @@
 		</header>
 		<nav>
 			<ul id="navigation">
-				<li class="currentMenuItem"><a href="wdd231/chamber/">Home</a></li>
+				<li class="currentMenuItem"><a href="index.html">Home</a></li>
 				<li><a href="#">Dicover</a></li>
 				<li>
-					<a href="wdd231/chamber/directory.html">Directory</a>
+					<a href="directory.html">Directory</a>
 				</li>
 				<li><a href="#">Join</a></li>
 			</ul>
@@ -62,20 +57,22 @@
 				</div>
 			</section>
 			<h2 id="title-pg">Home</h2>
-			<section id="events">
-				<h2>Events</h2>
-				<div id="event-list"></div>
-			</section>
+			<div class="cards1">
+				<section id="events">
+					<h2>Events</h2>
+					<div id="event-list"></div>
+				</section>
 
-			<section id="weather">
-				<h2>Weather</h2>
-				<div id="weather-data"></div>
-			</section>
+				<section id="weather">
+					<h2>Weather</h2>
+					<div id="weather-data"></div>
+				</section>
 
-			<section id="weather-forecast">
-				<h2>Weather Forecast</h2>
-				<div id="forecast-data"></div>
-			</section>
+				<section id="weather-forecast">
+					<h2>Weather Forecast</h2>
+					<div id="forecast-data"></div>
+				</section>
+			</div>
 
 			<section id="spotlights">
 				<div class="spotlight-container"></div>

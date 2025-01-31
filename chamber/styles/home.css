@@ -189,3 +189,11 @@ aside > p > span {
 	display: flex;
 	padding: 1rem 0;
 }
+
+#forecast-data {
+	padding: 1rem;
+}
+
+#forecast-data > p {
+	font-size: 20px;
+}

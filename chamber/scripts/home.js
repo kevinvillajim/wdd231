@@ -7,6 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		menuTogle.classList.toggle("open");
 	});
 
+	function getDays(index) {
+		const days = [
+			"Sunday",
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday",
+			"Saturday",
+		];
+
+		return ["Today", days[(index + 1) % 7], days[(index + 2) % 7]];
+	}
+
+	const todayIndex = getDays(new Date().getDay());
+
 	// Fetch Weather Data
 	const weatherSection = document.getElementById("weather-data");
 	const weatherForecast = document.getElementById("forecast-data");
@@ -42,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			weatherForecast.innerHTML = dailyForecast
 				.map(
 					(day, i) => `
-					<p >Day ${i + 1}: <b>${
+					<p>${todayIndex[i]}: <b>${
 						day.weather[0].description.charAt(0).toUpperCase() +
 						day.weather[0].description.slice(1)
 					}</b> (${Math.round(day.main.temp)}°C)</p>
