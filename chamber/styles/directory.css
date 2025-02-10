@@ -67,6 +67,23 @@ footer {
 	background-color: rgba(256, 256, 256, 0.2);
 }
 
+ul {
+	display: none;
+	list-style-type: none;
+}
+
+#menuToggle.open::before {
+	content: "X";
+}
+
+#navigation.open {
+	display: block;
+}
+
+.img-cards {
+	width: 100px;
+}
+
 #directoryCards {
 	display: flex;
 	flex-wrap: wrap;
@@ -93,22 +110,6 @@ footer {
 	width: 100%;
 }
 
-ul {
-	display: none;
-	list-style-type: none;
-}
-
-#menuToggle.open::before {
-	content: "X";
-}
-
-#navigation.open {
-	display: block;
-}
-
-.img-cards {
-	width: 100px;
-}
 
 #filterToggle {
 	background: none;

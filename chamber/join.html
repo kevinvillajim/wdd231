@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Welcome to the Chamber of Commerce site, promoting local businesses, community interests, and events in your town."
+		/>
+		<meta name="author" content="Kevin Villacreses" />
+		<title>Join - Portal - Chamber of commerce</title>
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/join.css" />
+		<link rel="stylesheet" href="styles/join-large.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="images/portal.ico" />
+		<meta property="og:title" content="Chamber of Commerce - Quito" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="images/portal-logo.png" />
+		<meta
+			property="og:url"
+			content="https://kevinvillajim.github.io/wdd231/chamber/directory.html"
+		/>
+		<script src="scripts/join.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<img
+				src="images/portal-logo.png"
+				alt="Chamber of Commerce Logo"
+				id="logo"
+				width="120"
+				height="120"
+			/>
+			<div class="chamberName">
+				<h1 class="tradeMark">Portal</h1>
+				<h2 class="sub">Chamber of commerce</h2>
+			</div>
+			<button id="menuToggle" aria-label="Toggle Menu"></button>
+		</header>
+		<ul id="navigation">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Dicover</a></li>
+			<li>
+				<a href="directory.html">Directory</a>
+			</li>
+			<li class="currentMenuItem"><a href="join.html">Join</a></li>
+		</ul>
+		<main class="join-main">
+			<h2>Membership Application</h2>
+			<div class="form-container">
+				<form id="joinForm" method="get" action="thankyou.html">
+					<fieldset>
+						<legend>Personal Information</legend>
+						<label
+							>First Name*
+							<input
+								type="text"
+								name="firstName"
+								required
+								autocomplete="given-name"
+								title="First Name"
+							/>
+						</label>
+
+						<label
+							>Last Name*
+							<input
+								type="text"
+								name="lastName"
+								required
+								autocomplete="family-name"
+								title="Last Name"
+							/>
+						</label>
+
+						<label
+							>Title
+							<input
+								type="text"
+								name="title"
+								autocomplete="organization-title"
+								title="Organization Title"
+								pattern="[A-Za-z -]{7,}"
+							/>
+						</label>
+
+						<label
+							>Email*
+							<input
+								type="email"
+								name="email"
+								required
+								autocomplete="email"
+								placeholder="example@domain.com"
+								title="Email Address"
+							/>
+						</label>
+
+						<label
+							>Mobile Phone*
+							<input
+								type="tel"
+								name="phone"
+								required
+								autocomplete="tel"
+								title="Phone Number"
+							/>
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Organization Information</legend>
+
+						<label
+							>Business Name*
+							<input
+								type="text"
+								name="business"
+								required
+								autocomplete="organization"
+								title="Business Name"
+							/>
+						</label>
+
+						<label
+							>Membership Level*
+							<select name="membership" required>
+								<option value="">Select Level...</option>
+								<option value="np">NP Membership (Non-profit)</option>
+								<option value="bronze">Bronze Membership</option>
+								<option value="silver">Silver Membership</option>
+								<option value="gold">Gold Membership</option>
+							</select>
+						</label>
+
+						<label
+							>Business Description
+							<textarea
+								name="description"
+								title="Business Description"
+							></textarea>
+						</label>
+					</fieldset>
+
+					<input type="hidden" id="timestamp" name="timestamp" />
+					<input type="submit" value="Apply Now" />
+				</form>
+
+				<div class="membership-cards">
+					<!-- Membership cards will be here -->
+					<div class="card np animate-card">
+						<h3>Membership Levels</h3>
+						<div class="card">
+							<p>Non-profit Membership Level</p>
+							<a id="free" class="modal-link">View Benefits</a>
+						</div>
+						<div class="card">
+							<p>Bronze Membership Level</p>
+							<a id="bronze" class="modal-link">View Benefits</a>
+						</div>
+						<div class="card">
+							<p>Silver Membership Level</p>
+							<a id="silver" class="modal-link">View Benefits</a>
+						</div>
+						<div class="card">
+							<p>Gold Membership Level</p>
+							<a id="gold" class="modal-link">View Benefits</a>
+						</div>
+					</div>
+					<!-- Repeat similar cards for Bronze, Silver, Gold -->
+				</div>
+			</div>
+
+			<dialog id="free-modal" class="membership-modal">
+				<div class="modal-header">
+					<h3>Non-Profit (NP) Membership Benefits</h3>
+					<button class="close-modal">✖</button>
+				</div>
+				<div class="modal-content">
+					<ul class="ul-info">
+						<li>✅ Access to networking events with local businesses</li>
+						<li>📌 Listing in the Chamber of Commerce directory</li>
+						<li>🎯 Free advertising opportunities on the chamber's website</li>
+						<li>📚 Access to educational workshops and seminars</li>
+						<li>💰 Discounted rates for chamber-hosted events</li>
+					</ul>
+				</div>
+			</dialog>
+
+			<dialog id="bronze-modal" class="membership-modal">
+				<div class="modal-header">
+					<h3>Bronze Membership Benefits</h3>
+					<button class="close-modal">✖</button>
+				</div>
+				<div class="modal-content">
+					<ul class="ul-info">
+						<li>🎖 All Non-Profit Membership benefits</li>
+						<li>📢 Social media promotions for your business</li>
+						<li>📌 Featured spot in the business directory</li>
+						<li>📰 Exclusive member-only newsletter</li>
+						<li>🥐 Invitation to business networking breakfasts</li>
+					</ul>
+				</div>
+			</dialog>
+
+			<dialog id="silver-modal" class="membership-modal">
+				<div class="modal-header">
+					<h3>Silver Membership Benefits</h3>
+					<button class="close-modal">✖</button>
+				</div>
+				<div class="modal-content">
+					<ul class="ul-info">
+						<li>🏅 All Bronze Membership benefits</li>
+						<li>📌 Priority placement in the online business directory</li>
+						<li>
+							📲 1 sponsored post per quarter on the chamber’s social media
+						</li>
+						<li>💼 Discounts on event sponsorship opportunities</li>
+						<li>📖 Access to member-exclusive leadership training programs</li>
+					</ul>
+				</div>
+			</dialog>
+
+			<dialog id="gold-modal" class="membership-modal">
+				<div class="modal-header">
+					<h3>Gold Membership Benefits</h3>
+					<button class="close-modal">✖</button>
+				</div>
+				<div class="modal-content">
+					<ul class="ul-info">
+						<li>🏆 All Silver Membership benefits</li>
+						<li>⭐ Premium placement on the chamber's homepage</li>
+						<li>📲 2 sponsored posts per quarter on social media</li>
+						<li>🤝 Exclusive invitations to high-level networking events</li>
+						<li>
+							📣 Recognition as a top-tier supporter in chamber publications
+						</li>
+						<li>🧑‍💼 Dedicated business consultation with industry experts</li>
+					</ul>
+				</div>
+			</dialog>
+		</main>
+		<footer>
+			<p>
+				&copy; <span id="currentYear"></span> Kevin Villacreses, Quito, Ecuador
+			</p>
+			<p id="lastModified"></p>
+		</footer>
+	</body>
+</html>
