@@ -1,0 +1,33 @@
+:root {
+	--primary-color: #8b4513;
+	--secondary-color: #f5f5dc;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--secondary-color);
+	color: #333;
+	padding: 20px;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: var(--primary-color);
+}
+.container {
+	max-width: 800px;
+	margin: auto;
+}
+#cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.card {
+	padding: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	background-color: #fffff7;
+}
