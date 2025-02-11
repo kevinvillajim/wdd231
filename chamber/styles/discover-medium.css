@@ -1,0 +1,12 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+  #discover-grid {
+    grid-template-areas:
+      "hero"
+      "sidebar"
+      "gallery";
+  }
+
+  .card-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}

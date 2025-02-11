@@ -1,9 +1,25 @@
 @media (min-width: 768px) {
-	.form-container {
-		grid-template-columns: 2fr 1fr;
-	}
+  .form-container {
+    grid-template-columns: 2fr 1fr;
+  }
 
-	fieldset {
-		padding: 1rem 3rem;
-	}
+  fieldset {
+    padding: 1rem 3rem;
+  }
+  #menuToggle {
+    display: none;
+  }
+  #navigation,
+  #navigation.open {
+    display: flex;
+    justify-content: center;
+  }
+
+  #navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .img-cards {
+    width: 200px;
+  }
 }

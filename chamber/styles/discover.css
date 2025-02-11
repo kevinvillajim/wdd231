@@ -1,231 +1,179 @@
 body {
-	font-family: "Roboto", sans-serif;
-	margin: 0;
-	padding: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header,
 footer {
-	background-color: #0e0e0e;
-	color: white;
-	text-align: center;
-	padding: 1rem;
-	display: flex;
-	justify-content: space-between;
+  background-color: #0e0e0e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chamberName {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 2rem;
-	text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2rem;
+  text-align: left;
 }
 .tradeMark {
-	margin: 0 0 10px 0;
-	font-size: 40px;
+  margin: 0 0 10px 0;
+  font-size: 40px;
 }
 .sub {
-	font-size: medium;
-	margin: 0;
+  font-size: medium;
+  margin: 0;
 }
 
 #menuToggle::before {
-	content: "☰";
+  content: "☰";
 }
 
 #menuToggle {
-	font-size: 2rem;
-	background: none;
-	border: none;
-	color: white;
-	cursor: pointer;
-	width: 100%;
-	text-align: right;
-	padding: 0.25rem 2vw;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0.25rem 2vw;
 }
 
 #navigation {
-	margin: 0;
-	padding-left: 0px;
-	background-color: #1d1d1d;
+  margin: 0;
+  padding-left: 0px;
+  background-color: #1d1d1d;
 }
 
 #navigation li {
-	display: block;
+  display: block;
 }
 
 #navigation li a {
-	display: block;
-	padding: 0.75rem 2vw;
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
+  display: block;
+  padding: 0.75rem 2vw;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .currentMenuItem a {
-	background-color: rgba(256, 256, 256, 0.2);
+  background-color: rgba(256, 256, 256, 0.2);
 }
 
 ul {
-	display: none;
-	list-style-type: none;
+  display: none;
+  list-style-type: none;
 }
 
 #menuToggle.open::before {
-	content: "X";
+  content: "X";
 }
 
 #navigation.open {
-	display: block;
-}
-
-.cards-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 16px;
-	padding: 16px;
-}
-.card {
-	border: 1px solid #ddd;
-	padding: 16px;
-	background: #fff;
-}
-.card img {
-	width: 100%;
-	height: auto;
-	transition: transform 0.3s ease;
-}
-.card:hover img {
-	transform: scale(1.05);
-}
-
-/* Main Content Grid */
-#discover-grid {
-	display: grid;
-	grid-template-areas:
-		"hero"
-		"sidebar"
-		"gallery";
-	grid-gap: 1em;
-}
-
-.hero {
-	grid-area: hero;
-	background-color: #e0e0e0;
-	padding: 1.5em;
-	text-align: center;
-}
-
-.sidebar {
-	grid-area: sidebar;
-	background-color: #f0f0f0;
-	padding: 1em;
+  display: block;
 }
 
 .card-gallery {
-	grid-area: gallery;
-	display: grid;
-	grid-template-columns: 1fr; /* Single column for small screens */
-	grid-gap: 1em;
+  display: grid;
+  padding: 16px;
+}
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  background: #fff;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+
+#discover-grid {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "sidebar"
+    "gallery";
+  grid-gap: 1em;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: #e0e0e0;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f0f0f0;
+  padding: 1em;
+}
+
+.card-gallery {
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
 }
 
 .card {
-	background-color: white;
-	border: 1px solid #ccc;
-	border-radius: 8px;
-	padding: 1em;
-	text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: #808080 0px 0px 20px;
 }
 
 .card figure {
-	margin: 0;
+  margin: 0;
 }
 
 .card img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 4px;
-	display: block; /* Ensure no space below image */
-	margin: 0 auto 10px; /* Center image and add bottom margin */
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .card h2 {
-	margin-bottom: 0.5em;
-	color: #0056b3;
+  margin-bottom: 0.5em;
+  color: #4b0a79;
 }
 
 .card address {
-	font-style: normal;
-	margin-bottom: 0.75em;
+  font-style: normal;
+  margin-bottom: 0.75em;
+  font-size: smaller;
+  font-weight: 300;
 }
 
 .card p {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
+  font-size: 15px;
 }
 
 .card button {
-	padding: 0.5em 1em;
-	background-color: #007bff;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+  padding: 0.5em 1em;
+  background-color: #4b0a79;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button:hover {
-	background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-	background-color: #ddd;
-	text-align: center;
-	font-size: 0.8em;
-}
-
-/* Responsive Navigation for Small Screens - Adjust based on your needs */
-@media screen and (max-width: 640px) {
-	#menu {
-		display: block; /* Show hamburger menu on small screens */
-	}
-
-	nav ul.navigation {
-		display: none; /* Hide navigation initially */
-		flex-direction: column;
-		position: absolute;
-		top: 100%; /* Adjust if header height is different */
-		left: 0;
-		width: 100%;
-		background-color: #ddd;
-		z-index: 10; /* Ensure it's above other content */
-	}
-
-	nav ul.navigation.responsive {
-		display: flex; /* Show navigation when responsive class is added */
-	}
-
-	nav ul.navigation li {
-		text-align: center;
-		margin: 0;
-		border-bottom: 1px solid #ccc; /* Optional separators */
-	}
-
-	/* medium.css */
-	@media (min-width: 641px) and (max-width: 1024px) {
-		#discover-grid {
-			grid-template-areas:
-				"hero hero"
-				"sidebar gallery"
-				"sidebar gallery";
-			grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
-		}
-
-		.card-gallery {
-			grid-template-columns: repeat(
-				2,
-				1fr
-			); /* Two columns for medium screens */
-		}
-	}
+  background-color: #7a00c6;
 }
