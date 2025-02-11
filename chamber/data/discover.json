@@ -1,0 +1,16 @@
+[
+	{
+		"title": "Historic Museum",
+		"address": "123 Main St, City, Country",
+		"description": "A beautiful museum showcasing regional history.",
+		"image": "images/museum.webp",
+		"link": "#"
+	},
+	{
+		"title": "City Park",
+		"address": "456 Park Ave, City, Country",
+		"description": "A scenic park with trails and playgrounds.",
+		"image": "images/park.webp",
+		"link": "#"
+	}
+]

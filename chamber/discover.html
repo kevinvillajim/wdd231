@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Discover Our Chamber</title>
+		<link rel="stylesheet" href="styles/discover.css" />
+		<link rel="stylesheet" href="styles/discover-large.css" />
+
+		<script defer src="scripts/discover.js"></script>
+	</head>
+	<body>
+		<header>
+			<img
+				src="images/portal-logo.png"
+				alt="Chamber of Commerce Logo"
+				id="logo"
+				width="120"
+				height="120"
+			/>
+			<div class="chamberName">
+				<h1 class="tradeMark">Portal</h1>
+				<h2 class="sub">Chamber of commerce</h2>
+			</div>
+			<button id="menuToggle" aria-label="Toggle Menu"></button>
+		</header>
+		<nav>
+			<ul id="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Dicover</a></li>
+				<li class="currentMenuItem">
+					<a href="directory.html">Directory</a>
+				</li>
+				<li><a href="join.html">Join</a></li>
+			</ul>
+		</nav>
+		<main id="discover-grid">
+			<section class="hero">
+				<h2>Discover [Your Area]</h2>
+				<p>
+					Welcome to the Discover page for [Your Chamber of Commerce Area]!
+					Explore the wonderful attractions and features that make our area
+					special.
+				</p>
+			</section>
+
+			<aside class="sidebar">
+				<div id="visit-message"></div>
+			</aside>
+
+			<section class="card-gallery"></section>
+			<footer>
+				<p>
+					&copy; <span id="year"></span> [Your Chamber of Commerce Name] | [Your
+					Name] | WDD 231 Project
+				</p>
+				<p id="lastModified"></p>
+			</footer>
+		</main>
+		<footer>
+			<p>&copy; 2024 Chamber of Commerce</p>
+		</footer>
+	</body>
+</html>
