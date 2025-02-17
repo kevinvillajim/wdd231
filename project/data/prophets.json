@@ -1,0 +1,632 @@
+[
+	{
+		"id": 1,
+		"name": "Joseph Smith",
+		"image": "images/joseph_smith.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1805-1844",
+		"role": "First President of the Church",
+		"quotes": [
+			{
+				"topic": "Revelation",
+				"quote": "I have learned for myself that the promises of the Lord are sure.",
+				"source": "Teachings of Presidents of the Church: Joseph Smith (2007), 167"
+			},
+			{
+				"topic": "Preach",
+				"quote": "The greatest and most important duty is to preach the Gospel.",
+				"source": "History of the Church, 2:478"
+			},
+			{
+				"topic": "Truth",
+				"quote": "Truth is eternal.",
+				"source": "Teachings of the Prophet Joseph Smith, 357"
+			},
+			{
+				"topic": "Faith",
+				"quote": "Faith is the moving cause of all action in temporal concerns, so it is in spiritual.",
+				"source": "Lectures on Faith, 1:10"
+			},
+			{
+				"topic": "Temple",
+				"quote": "The earth will be smitten with a curse unless there is a welding link of some kind or other between the fathers and the children.",
+				"source": "Doctrine and Covenants 128:18"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Brigham Young",
+		"image": "images/brigham_young.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1801-1877",
+		"role": "Second President of the Church",
+		"quotes": [
+			{
+				"topic": "Holy Spirit",
+				"quote": "...every accomplishment, every refined art, and useful discovery in science is the result of the operations of the Holy Spirit.",
+				"source": "Discourses of Brigham Young, sel. John A. Widtsoe (1954), 12"
+			},
+			{
+				"topic": "Work",
+				"quote": "Do all you can; and then, if you cannot do all that you wish, be contented.",
+				"source": "Teachings of Brigham Young, sel. Clyde N. Williams (1954), 299"
+			},
+			{
+				"topic": "Education",
+				"quote": "You educate a man for something. If you educate him for good, then he is good. If you educate him for evil, he will be evil.",
+				"source": "Journal of Discourses, 1:17"
+			},
+			{
+				"topic": "Family",
+				"quote": "Let us make a heaven of our homes.",
+				"source": "Teachings of Presidents of the Church: Brigham Young (1997), 305"
+			},
+			{
+				"topic": "Temple",
+				"quote": "Every ordinance that the Lord has revealed is for the exaltation of his children.",
+				"source": "Journal of Discourses, 16:267"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Alma the Younger",
+		"image": "images/alma_the_younger.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 100 BC",
+		"role": "Chief Judge and High Priest of Nephites",
+		"quotes": [
+			{
+				"topic": "Faith",
+				"quote": "...faith is not to have a perfect knowledge of things; but to hope for things which are not seen, which are true.",
+				"source": "Alma 32:21"
+			},
+			{
+				"topic": "Faith",
+				"quote": "...if ye have faith ye can do all things which are expedient unto me.",
+				"source": "Alma 26:12"
+			},
+			{
+				"topic": "Repentance",
+				"quote": "And now, behold, I say unto you, my brethren, that if ye will humble yourselves, and repent of all your sins, and witness before God that ye are willing to serve him all the remainder of your days...",
+				"source": "Alma 5:14"
+			},
+			{
+				"topic": "Teaching",
+				"quote": "Preach unto them repentance, and faith on the Lord Jesus Christ; teach them to humble themselves and to be meek and lowly in heart.",
+				"source": "Alma 37:33"
+			},
+			{
+				"topic": "Plan of Salvation",
+				"quote": "The plan of restoration is requisite with the justice of God; for it is just that all things should be restored to their proper order.",
+				"source": "Alma 41:2"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Russell M. Nelson",
+		"image": "images/russell_m_nelson.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1924-present",
+		"role": "17th President of the Church",
+		"quotes": [
+			{
+				"topic": "Love",
+				"quote": "Our Savior and Redeemer, Jesus Christ, performed the greatest act of love in the history of the universe when He atoned for all of us.",
+				"source": "General Conference, April 2018"
+			},
+			{
+				"topic": "Gratitude",
+				"quote": "Counting our blessings is far better than recounting our problems.",
+				"source": "General Conference, October 2019"
+			},
+			{
+				"topic": "Hope",
+				"quote": "The Lord loves effort, and He loves to bless those who try.",
+				"source": "General Conference, April 2020"
+			},
+			{
+				"topic": "Covenant Path",
+				"quote": "The covenant path is the way to eternal joy and happiness.",
+				"source": "General Conference, April 2021"
+			},
+			{
+				"topic": "Temple",
+				"quote": "Each temple is a holy place where revelation flows constantly.",
+				"source": "General Conference, October 2018"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Henry B. Eyring",
+		"image": "images/henry_b_eyring.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1933-present",
+		"role": "Second Counselor in the First Presidency",
+		"quotes": [
+			{
+				"topic": "Kindness",
+				"quote": "The Lord's kindness leads us to repentance.",
+				"source": "General Conference, April 2015"
+			},
+			{
+				"topic": "Service",
+				"quote": "The greatest joy we can have is to know that we have helped someone else.",
+				"source": "General Conference, October 2009"
+			},
+			{
+				"topic": "Family",
+				"quote": "Our families can be a heaven on earth.",
+				"source": "General Conference, April 2008"
+			},
+			{
+				"topic": "Holy Ghost",
+				"quote": "The Holy Ghost is a precious companion in all of our important decisions.",
+				"source": "General Conference, April 2020"
+			},
+			{
+				"topic": "Prayer",
+				"quote": "Daily prayer is the key to opening the powers of heaven in our personal lives.",
+				"source": "General Conference, October 2019"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Jeffrey R. Holland",
+		"image": "images/jeffrey_r_holland.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1940-present",
+		"role": "Quorum of the Twelve Apostles",
+		"quotes": [
+			{
+				"topic": "Faith",
+				"quote": "God loves us. He loves us individually. He loves every one of us.",
+				"source": "General Conference, October 2003"
+			},
+			{
+				"topic": "Charity",
+				"quote": "Behold, I say unto you that this is my gospel; and these are the things which I desire that ye should do.",
+				"source": "3 Nephi 27:21-27"
+			},
+			{
+				"topic": "Enduring",
+				"quote": "…hold on, hold fast, hold on to the iron rod!",
+				"source": "General Conference, April 2009"
+			},
+			{
+				"topic": "Hope",
+				"quote": "Don't you quit. You keep walking. You keep trying. There is help and happiness ahead.",
+				"source": "General Conference, October 1999"
+			},
+			{
+				"topic": "Atonement",
+				"quote": "No love in mortality comes closer to approximating the pure love of Jesus Christ than the selfless love a devoted mother has for her child.",
+				"source": "General Conference, April 2015"
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "Dallin H. Oaks",
+		"image": "images/dallin_h_oaks.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1932-present",
+		"role": "First Counselor in the First Presidency",
+		"quotes": [
+			{
+				"topic": "Law",
+				"quote": "The Lord's way is not easy. It requires sacrifice—time, talents, and means.",
+				"source": "General Conference, October 2012"
+			},
+			{
+				"topic": "Love",
+				"quote": "Love is the greatest of all the commandments.",
+				"source": "General Conference, April 2014"
+			},
+			{
+				"topic": "Discernment",
+				"quote": "We should seek the companionship of the Holy Ghost.",
+				"source": "General Conference, October 2010"
+			},
+			{
+				"topic": "Testimony",
+				"quote": "Our testimonies can grow and develop and mature, just like we do.",
+				"source": "General Conference, April 2008"
+			},
+			{
+				"topic": "Truth",
+				"quote": "Truth is truth, and it does not change according to our ability to stomach it emotionally, psychologically, or socially.",
+				"source": "General Conference, October 2018"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "Dieter F. Uchtdorf",
+		"image": "images/dieter_f_uchtdorf.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1940-present",
+		"role": "Quorum of the Twelve Apostles",
+		"quotes": [
+			{
+				"topic": "Hope",
+				"quote": "Hope smiles through the tears of sorrow.",
+				"source": "General Conference, April 2012"
+			},
+			{
+				"topic": "Forgiveness",
+				"quote": "…to forgive and to be forgiven are two of the highest of all human attributes.",
+				"source": "General Conference, April 2007"
+			},
+			{
+				"topic": "Joy",
+				"quote": "The joy of our lives is inseparably connected with our love of God.",
+				"source": "General Conference, October 2011"
+			},
+			{
+				"topic": "Faith",
+				"quote": "Doubt your doubts before you doubt your faith.",
+				"source": "General Conference, October 2013"
+			},
+			{
+				"topic": "Service",
+				"quote": "Often, the answer to our prayer does not come while we're on our knees but while we're on our feet serving the Lord and serving those around us.",
+				"source": "General Conference, April 2011"
+			}
+		]
+	},
+	{
+		"id": 9,
+		"name": "David A. Bednar",
+		"image": "images/david_a_bednar.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1952-present",
+		"role": "Quorum of the Twelve Apostles",
+		"quotes": [
+			{
+				"topic": "Spirituality",
+				"quote": "The Holy Ghost is the third member of the Godhead.",
+				"source": "General Conference, October 2010"
+			},
+			{
+				"topic": "Strength",
+				"quote": "We are not alone in our struggles.",
+				"source": "General Conference, April 2013"
+			},
+			{
+				"topic": "Testimony",
+				"quote": "A testimony is a precious gift.",
+				"source": "General Conference, October 2008"
+			},
+			{
+				"topic": "Learning",
+				"quote": "Learning by faith requires spiritual, mental, and physical exertion and not just passive reception.",
+				"source": "General Conference, April 2007"
+			},
+			{
+				"topic": "Discipleship",
+				"quote": "Discipleship is not a spectator sport.",
+				"source": "General Conference, October 2012"
+			}
+		]
+	},
+	{
+		"id": 10,
+		"name": "Nephi",
+		"image": "images/nephi.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 600 BC",
+		"role": "Prophet and Record Keeper",
+		"quotes": [
+			{
+				"topic": "Obedience",
+				"quote": "I will go and do the things which the Lord hath commanded, for I know that the Lord giveth no commandments unto the children of men, save he shall prepare a way for them that they may accomplish the thing which he commandeth them.",
+				"source": "1 Nephi 3:7"
+			},
+			{
+				"topic": "Faith",
+				"quote": "And it came to pass that I, Nephi, said unto my father: I will go and do the things which the Lord hath commanded.",
+				"source": "1 Nephi 3:7"
+			},
+			{
+				"topic": "Scriptures",
+				"quote": "And I did read many things unto them which were written in the books of Moses; but that I might more fully persuade them to believe in the Lord their Redeemer I did read unto them that which was written by the prophet Isaiah.",
+				"source": "1 Nephi 19:23"
+			},
+			{
+				"topic": "Enduring",
+				"quote": "Wherefore, ye must press forward with a steadfastness in Christ, having a perfect brightness of hope, and a love of God and of all men.",
+				"source": "2 Nephi 31:20"
+			},
+			{
+				"topic": "Testimony",
+				"quote": "And we talk of Christ, we rejoice in Christ, we preach of Christ, we prophesy of Christ, and we write according to our prophecies, that our children may know to what source they may look for a remission of their sins.",
+				"source": "2 Nephi 25:26"
+			}
+		]
+	},
+	{
+		"id": 11,
+		"name": "King Benjamin",
+		"image": "images/king_benjamin.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 130 BC",
+		"role": "Nephite King and Prophet",
+		"quotes": [
+			{
+				"topic": "Service",
+				"quote": "When ye are in the service of your fellow beings ye are only in the service of your God.",
+				"source": "Mosiah 2:17"
+			},
+			{
+				"topic": "Humility",
+				"quote": "I am like as yourselves, subject to all manner of infirmities in body and mind...",
+				"source": "Mosiah 2:11"
+			},
+			{
+				"topic": "Leadership",
+				"quote": "I tell you these things that ye may learn wisdom; that ye may learn that when ye are in the service of your fellow beings ye are only in the service of your God.",
+				"source": "Mosiah 2:17"
+			},
+			{
+				"topic": "Gratitude",
+				"quote": "If you should render all the thanks and praise which your whole soul has power to possess... ye would still be unprofitable servants.",
+				"source": "Mosiah 2:20-21"
+			},
+			{
+				"topic": "Repentance",
+				"quote": "For the natural man is an enemy to God, and has been from the fall of Adam, and will be, forever and ever, unless he yields to the enticings of the Holy Spirit, and putteth off the natural man.",
+				"source": "Mosiah 3:19"
+			}
+		]
+	},
+	{
+		"id": 12,
+		"name": "Moroni",
+		"image": "images/moroni.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 400 AD",
+		"role": "Last Nephite Prophet and Record Keeper",
+		"quotes": [
+			{
+				"topic": "Faith",
+				"quote": "And now, I, Moroni, would speak somewhat concerning these things; I would show unto the world that faith is things which are hoped for and not seen; wherefore, dispute not because ye see not, for ye receive no witness until after the trial of your faith.",
+				"source": "Ether 12:6"
+			},
+			{
+				"topic": "Prayer",
+				"quote": "Behold, I would exhort you that when ye shall read these things... that ye would ask God, the Eternal Father, in the name of Christ, if these things are not true; and if ye shall ask with a sincere heart, with real intent, having faith in Christ, he will manifest the truth of it unto you, by the power of the Holy Ghost.",
+				"source": "Moroni 10:4"
+			},
+			{
+				"topic": "Charity",
+				"quote": "And charity suffereth long, and is kind, and envieth not, and is not puffed up, seeketh not her own, is not easily provoked, thinketh no evil, and rejoiceth not in iniquity but rejoiceth in the truth, beareth all things, believeth all things, hopeth all things, endureth all things.",
+				"source": "Moroni 7:45"
+			},
+			{
+				"topic": "Hope",
+				"quote": "Wherefore, if a man have faith he must needs have hope; for without faith there cannot be any hope.",
+				"source": "Moroni 7:42"
+			},
+			{
+				"topic": "Enduring",
+				"quote": "And if ye have no hope ye must needs be in despair; and despair cometh because of iniquity.",
+				"source": "Moroni 10:22"
+			}
+		]
+	},
+	{
+		"id": 13,
+		"name": "Mormon",
+		"image": "images/mormon.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 310-385 AD",
+		"role": "Prophet, Military Leader, and Record Compiler",
+		"quotes": [
+			{
+				"topic": "Faith",
+				"quote": "And what is it that ye shall hope for? Behold I say unto you that ye shall have hope through the atonement of Christ and the power of his resurrection, to be raised unto life eternal.",
+				"source": "Moroni 7:41"
+			},
+			{
+				"topic": "Charity",
+				"quote": "...charity is the pure love of Christ, and it endureth forever; and whoso is found possessed of it at the last day, it shall be well with him.",
+				"source": "Moroni 7:47"
+			},
+			{
+				"topic": "Judgment",
+				"quote": "For behold, the same that judgeth rashly shall be judged rashly again; for according to his works shall his wages be.",
+				"source": "Mormon 8:19"
+			},
+			{
+				"topic": "Scripture",
+				"quote": "And I, Mormon, do write the things which have been commanded me of the Lord.",
+				"source": "3 Nephi 26:12"
+			},
+			{
+				"topic": "Enduring",
+				"quote": "...be faithful unto Christ; and may not the things which I have written grieve thee, to weigh thee down unto death; but may Christ lift thee up.",
+				"source": "Moroni 9:25"
+			}
+		]
+	},
+	{
+		"id": 14,
+		"name": "John Taylor",
+		"image": "images/john_taylor.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1808-1887",
+		"role": "Third President of the Church",
+		"quotes": [
+			{
+				"topic": "Truth",
+				"quote": "I was not born a slave! I cannot, will not be a slave. I would not be a slave to God... I'd be His servant, friend, His son.",
+				"source": "Teachings of Presidents of the Church: John Taylor (2001), 75"
+			},
+			{
+				"topic": "Testimony",
+				"quote": "I testify that Joseph Smith was a Prophet of God, for I heard the voice of God declaring that he was.",
+				"source": "Teachings of Presidents of the Church: John Taylor (2001), 83"
+			},
+			{
+				"topic": "Faith",
+				"quote": "The principles of truth and the principles of error in their own nature, are opposed to each other.",
+				"source": "The Gospel Kingdom (1943), 45"
+			},
+			{
+				"topic": "Priesthood",
+				"quote": "The priesthood is given for the blessing, happiness, and exaltation of the human family.",
+				"source": "Journal of Discourses, 10:103"
+			},
+			{
+				"topic": "Temple",
+				"quote": "We are here to co-operate with God in this world... to build temples, and to administer therein.",
+				"source": "Journal of Discourses, 17:268"
+			}
+		]
+	},
+	{
+		"id": 15,
+		"name": "Wilford Woodruff",
+		"image": "images/wilford_woodruff.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1807-1898",
+		"role": "Fourth President of the Church",
+		"quotes": [
+			{
+				"topic": "Temple",
+				"quote": "We have not finished our work when we have done with ourselves. We will never finish our work until we save all that depends upon us.",
+				"source": "Teachings of Presidents of the Church: Wilford Woodruff (2004), 192"
+			},
+			{
+				"topic": "Work",
+				"quote": "When our work is done, we will rest, but not before.",
+				"source": "Teachings of Presidents of the Church: Wilford Woodruff (2004), 267"
+			},
+			{
+				"topic": "Holy Ghost",
+				"quote": "The Lord will not deceive any man. If He has any revelation to communicate to His children, He will make no mistake in the delivering of it.",
+				"source": "Journal of Discourses, 14:33"
+			},
+			{
+				"topic": "Family History",
+				"quote": "God has given us the power to stand as saviors upon Mount Zion, and kingdoms are put under our charge.",
+				"source": "Teachings of Presidents of the Church: Wilford Woodruff (2004), 209"
+			},
+			{
+				"topic": "Faith",
+				"quote": "I rely upon the Lord, and go ahead with my duty whatever it may be.",
+				"source": "Teachings of Presidents of the Church: Wilford Woodruff (2004), 219"
+			}
+		]
+	},
+	{
+		"id": 16,
+		"name": "Abinadi",
+		"image": "images/abinadi.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 150 BC",
+		"role": "Prophet and Martyr",
+		"quotes": [
+			{
+				"topic": "Courage",
+				"quote": "Touch me not, for God shall smite you if ye lay your hands upon me, for I have not delivered the message which the Lord sent me to deliver.",
+				"source": "Mosiah 13:3"
+			},
+			{
+				"topic": "Commandments",
+				"quote": "And now ye have said that salvation cometh by the law of Moses. I say unto you that it is expedient that ye should keep the law of Moses as yet; but I say unto you, that the time shall come when it shall no more be expedient to keep the law of Moses.",
+				"source": "Mosiah 13:27"
+			},
+			{
+				"topic": "Atonement",
+				"quote": "And thus God breaketh the bands of death, having gained the victory over death; giving the Son power to make intercession for the children of men.",
+				"source": "Mosiah 15:8"
+			},
+			{
+				"topic": "Resurrection",
+				"quote": "If Christ had not risen from the dead, or have broken the bands of death that the grave should have no victory, and that death should have no sting, there could have been no resurrection.",
+				"source": "Mosiah 16:7"
+			},
+			{
+				"topic": "Judgment",
+				"quote": "For behold, judgment is mine, saith the Lord.",
+				"source": "Mosiah 15:9"
+			}
+		]
+	},
+	{
+		"id": 17,
+		"name": "Samuel the Lamanite",
+		"image": "images/samuel_the_lamanite.jpg",
+		"affiliation": "Book of Mormon",
+		"years": "circa 6 BC",
+		"role": "Lamanite Prophet",
+		"quotes": [
+			{
+				"topic": "Repentance",
+				"quote": "Nothing can save this people save it be repentance and faith on the Lord Jesus Christ.",
+				"source": "Helaman 13:6"
+			},
+			{
+				"topic": "Signs",
+				"quote": "Behold, I give unto you a sign; for five years more cometh, and behold, then cometh the Son of God to redeem all those who shall believe on his name.",
+				"source": "Helaman 14:2"
+			},
+			{
+				"topic": "Resurrection",
+				"quote": "For behold, he surely must die that salvation may come; yea, it behooveth him and becometh expedient that he dieth, to bring to pass the resurrection of the dead.",
+				"source": "Helaman 14:15"
+			},
+			{
+				"topic": "Faith",
+				"quote": "And if ye believe on his name ye will repent of all your sins, that thereby ye may have a remission of them through his merits.",
+				"source": "Helaman 14:13"
+			},
+			{
+				"topic": "Judgment",
+				"quote": "But behold, the resurrection of Christ redeemeth mankind, yea, even all mankind, and bringeth them back into the presence of the Lord.",
+				"source": "Helaman 14:17"
+			}
+		]
+	},
+	{
+		"id": 18,
+		"name": "Lorenzo Snow",
+		"image": "images/lorenzo_snow.jpg",
+		"affiliation": "Latter-day Saint",
+		"years": "1814-1901",
+		"role": "Fifth President of the Church",
+		"quotes": [
+			{
+				"topic": "Divine Potential",
+				"quote": "As man now is, God once was; as God now is, man may be.",
+				"source": "Teachings of Presidents of the Church: Lorenzo Snow (2012), 83"
+			},
+			{
+				"topic": "Tithing",
+				"quote": "The law of tithing is one of the most important ever revealed to man.",
+				"source": "Teachings of Presidents of the Church: Lorenzo Snow (2012), 160"
+			},
+			{
+				"topic": "Faith",
+				"quote": "It is the privilege of every Latter-day Saint to know the truth as God knows it.",
+				"source": "Teachings of Presidents of the Church: Lorenzo Snow (2012), 75"
+			},
+			{
+				"topic": "Temple",
+				"quote": "Every foundation stone that is laid for a Temple, and every Temple completed... lessens the power of Satan on the earth, and increases the power of God and Godliness.",
+				"source": "Teachings of Presidents of the Church: Lorenzo Snow (2012), 142"
+			},
+			{
+				"topic": "Work",
+				"quote": "We are here that we may be educated in a school of suffering and of fiery trials.",
+				"source": "Teachings of Presidents of the Church: Lorenzo Snow (2012), 117"
+			}
+		]
+	}
+]

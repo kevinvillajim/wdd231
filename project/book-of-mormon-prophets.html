@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prophetic Inspiration - Home</title>
+		<link rel="stylesheet" href="styles/shared.css" />
+		<link rel="stylesheet" href="styles/shared-large.css" />
+		<link rel="stylesheet" href="styles/lds-prophets.css" />
+		<link rel="stylesheet" href="styles/lds-prophets-large.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Prophetic Inspiration</h1>
+			<button id="menuToggle" aria-label="Toggle Menu"></button>
+		</header>
+		<nav>
+			<ul id="navigation">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="lds-prophets.html">Latter-day Saint Prophets</a>
+				</li>
+				<li class="currentMenuItem">
+					<a href="book-of-mormon-prophets.html">Book of Mormon Prophets</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="featured-prophets">
+				<h2>Later Day Prophets</h2>
+				<div id="prophet-cards"></div>
+			</section>
+			<div id="quote-modal" class="modal">
+				<div class="modal-content">
+					<span class="close-button">&times;</span>
+					<p id="modal-quote"></p>
+					<p id="modal-source"></p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2023 Prophetic Inspiration</p>
+		</footer>
+		<script type="module" src="scripts/script.js"></script>
+		<script type="module" src="scripts/bom-prophets.js"></script>
+	</body>
+</html>
