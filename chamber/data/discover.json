@@ -1,16 +1,50 @@
 [
-	{
-		"title": "Historic Museum",
-		"address": "123 Main St, City, Country",
-		"description": "A beautiful museum showcasing regional history.",
-		"image": "images/museum.webp",
-		"link": "#"
-	},
-	{
-		"title": "City Park",
-		"address": "456 Park Ave, City, Country",
-		"description": "A scenic park with trails and playgrounds.",
-		"image": "images/park.webp",
-		"link": "#"
-	}
+  {
+    "title": "Mitad del Mundo",
+    "image": "images/discover/quito_item1.webp",
+    "address": "Av. Manuel Córdova Galarza, San Antonio de Pichincha 170184, Ecuador",
+    "description": "Stand with one foot in each hemisphere at La Mitad del Mundo (Middle of the World), an equatorial line marking the supposed division of the Earth. Explore the Ethnographic Museum inside the monument which showcases Ecuadorian culture. While recent GPS readings suggest the true equator is slightly north, it remains a fascinating and iconic landmark. Enjoy souvenir shops, restaurants, and cultural performances in the surrounding complex."
+  },
+  {
+    "title": "Historic Center of Quito",
+    "image": "images/discover/quito_item2.webp",
+    "address": "Centro Histórico, Quito, Ecuador",
+    "description": "A UNESCO World Heritage site, Quito's Old Town is one of the best-preserved historic centers in Latin America. Wander through its cobblestone streets and marvel at colonial architecture. Key sites include Plaza de la Independencia, the Presidential Palace, the Compañía de Jesús church (known for its opulent gold leaf interior), and the Monastery of San Francisco. Explore museums, artisan shops, and enjoy the vibrant atmosphere."
+  },
+  {
+    "title": "TelefériQo Cable Car",
+    "image": "images/discover/quito_item3.webp",
+    "address": "Fulgence Paris y, Quito 170150, Ecuador",
+    "description": "Ascend Pichincha Volcano via the TelefériQo cable car for breathtaking panoramic views of Quito and the surrounding Andean landscape. At the top, explore Cruz Loma, hike scenic trails, enjoy the fresh mountain air, and visit the Chapel of the Palm of God. On a clear day, you can see snow-capped volcanoes in the distance. Dress warmly as it can be significantly colder at the higher altitude."
+  },
+  {
+    "title": "La Compañía de Jesús Church",
+    "image": "images/discover/quito_item4.webp",
+    "address": "Benavides y Garcia Moreno, Quito 170104, Ecuador",
+    "description": "Considered one of Quito's and Ecuador's most important religious sites, the Compañía de Jesús Church is renowned for its incredibly ornate Baroque architecture and lavish interior.  Almost every surface inside is covered in gold leaf.  Take your time to admire the intricate details of the artwork and learn about the Jesuit history associated with this stunning church. Guided tours are often available to enhance your visit."
+  },
+  {
+    "title": "Plaza de la Independencia (Plaza Grande)",
+    "image": "images/discover/quito_item5.webp",
+    "address": "Plaza de la Independencia, Quito 170104, Ecuador",
+    "description": "The heart of Quito's Historic Center, Plaza de la Independencia, also known as Plaza Grande, is a bustling square surrounded by significant buildings. Admire the Presidential Palace (Carondelet Palace), the Metropolitan Cathedral, the Archbishop's Palace, and the Municipal Palace. Observe the changing of the guard ceremony at the Presidential Palace (check schedules). Enjoy people-watching, street performers, and cafes around the plaza."
+  },
+  {
+    "title": "Basilica of the National Vow (Basílica del Voto Nacional)",
+    "image": "images/discover/quito_item6.webp",
+    "address": "Carchi N12-127 y Venezuela, Quito 170150, Ecuador",
+    "description": "An impressive neo-Gothic basilica, the Basílica del Voto Nacional is a landmark visible from many parts of Quito.  It is famous for its gargoyles which are represented by native Ecuadorian animals, not traditional European creatures.  Climb the towers for stunning city views (be aware of the steep stairs!).  Explore the chapels and stained glass windows within this architectural marvel."
+  },
+  {
+    "title": "Guayasamín House Museum (Casa Museo Guayasamín)",
+    "image": "images/discover/quito_item7.webp",
+    "address": "Mariano Calvache E18-94 y, Quito 170150, Ecuador",
+    "description": "Visit the former home and studio of Oswaldo Guayasamín, one of Ecuador's most celebrated artists.  The Casa Museo Guayasamín showcases his powerful expressionist artwork reflecting social issues and indigenous culture. Explore his art collections, pre-Columbian artifacts, and the beautiful gardens surrounding the house.  Gain insight into Ecuadorian history and art through Guayasamín's unique perspective."
+  },
+  {
+    "title": "El Panecillo Hill & Virgin of Quito",
+    "image": "images/discover/quito_item8.webp",
+    "address": "El Panecillo, Quito 170109, Ecuador",
+    "description": "Ascend El Panecillo hill, topped by the towering aluminum statue of the Virgin of Quito. This iconic landmark offers panoramic views of the city, especially stunning at sunset. The statue itself is an adaptation of the Virgin of Quito sculpture by Bernardo de Legarda. Explore the surrounding area, find viewpoints, and enjoy the impressive scale of the Virgin and the cityscape below. Be mindful of safety and take precautions against petty theft in the area."
+  }
 ]
